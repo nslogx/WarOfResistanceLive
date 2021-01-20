@@ -316,9 +316,10 @@ class Weibo(object):
         elif u'昨天' in created_at:
             day = timedelta(days=1)
             created_at = (datetime.now() - day).strftime('%Y-%m-%d')
-        elif created_at.count('-') == 1:
-            year = datetime.now().strftime('%Y')
-            created_at = year + '-' + created_at
+        else:
+            created_at = created_at.replace('+0800 ', '')
+            temp = datetime.strptime(created_at, '%c')
+            created_at = datetime.strftime(temp, '%Y-%m-%d')
         return created_at
 
     def standardize_info(self, weibo):
