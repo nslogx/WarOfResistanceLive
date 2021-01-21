@@ -63,23 +63,18 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M')"
 
-      # 提交修改
+      # 提交修改 & 推送
       - name: Commit Changes
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v7
         with:
+          branch: main
+          push: true
           author_name: Koko Huang
           author_email: huangjianke@vip.163.com
           message: "已同步最新数据(${{steps.date.outputs.date}})"
-          add: "./"
+          add: "."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # 推送
-      - name: Push Changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       # 设置 Node.js 环境
       - name: Use Node.js 12.x
