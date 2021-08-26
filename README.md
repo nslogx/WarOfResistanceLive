@@ -1,6 +1,6 @@
 # 抗战直播
 
-**预览地址**：[https://kokohuang.github.io/WarOfResistanceLive](https://kokohuang.github.io/WarOfResistanceLive/)
+**预览地址**：[https://nslog11.github.io/WarOfResistanceLive](https://nslog11.github.io/WarOfResistanceLive/)
 
 **本项目数据来源**：[@抗战直播](https://weibo.com/kzzb)
 
@@ -69,7 +69,7 @@ python weibo.py
 RSS订阅地址：
 
 ```
-https://kokohuang.github.io/WarOfResistanceLive/atom.xml
+https://nslog11.github.io/WarOfResistanceLive/atom.xml
 ```
 
 ## Github Actions 持续集成
