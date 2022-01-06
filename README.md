@@ -1,6 +1,6 @@
 # 抗战直播
 
-**预览地址**：[https://nslog11.github.io/WarOfResistanceLive](https://nslog11.github.io/WarOfResistanceLive/)
+**预览地址**：[https://0xPool.github.io/WarOfResistanceLive](https://0xPool.github.io/WarOfResistanceLive/)
 
 **本项目数据来源**：[@抗战直播](https://weibo.com/kzzb)
 
