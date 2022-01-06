@@ -69,8 +69,8 @@ jobs:
         with:
           branch: main
           push: true
-          author_name: Koko Huang
-          author_email: huangjianke@vip.163.com
+          author_name: 0xPool
+          author_email: nslogx@gmail.com
           message: "已同步最新数据(${{steps.date.outputs.date}})"
           add: "."
         env:
