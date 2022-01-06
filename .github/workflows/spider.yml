@@ -7,7 +7,7 @@ on:
   # 定时触发，在 8:00-24:00 间每隔 2 小时更新一次(https://crontab.guru)
   # 由于 cron 设定的时间为 UTC 时间，所以 +8 即为北京时间
   schedule:
-    - cron: "0 0-16/2 * * *"
+    - cron: "0 0-16/4 * * *"
 
   # 允许手动触发 Actions
   workflow_dispatch:
