@@ -104,8 +104,8 @@ jobs:
 
       # 发布
       - name: Deploy Github Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site/public
-          publish_branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./site/public
+          branch: gh-pages
